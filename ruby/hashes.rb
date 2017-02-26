@@ -5,7 +5,7 @@
 #set up hash with client data, the client's name, age, number of children, decor theme, and so on
 #print hash to screen
 #update the hash? but with what? 
-#print updated hash using p. __ <- hash name 
+#print updated hash using p. __ 
 
 #notes: i didn't have time to completely figure out how to update a key with the strings into symbols method so i just have a loop going that asks the user for all of their favorite decor themes and colors and asks them to type done or none.
 
