@@ -21,3 +21,28 @@ end
 color_rank.each do |color, rank|
 	puts "i like #{color}, it's rank is #{rank}"
 end 	
+
+fave_colors.map! do |color|
+	puts color
+	color.upcase
+end 
+
+p fave_colors
+
+nums = [1, 2, 3, 4, 5]
+h = {"a" => 100, "b" => 90, "c" => 80}
+
+#array methods 
+
+nums.delete_if {|num| num < 3}
+nums.keep_if {|num| num > 1}
+nums.select {|num| num < 5}
+nums.pop {|num| num > 4}
+
+#hash methods
+h.delete_if {|grade, score| grade > "b"}
+h.keep_if {|grade, score| grade > "c"}
+h.select {|grade, score| grade <= "b"}
+#not sure if .shift, .reject, or .delete_if would be the closest to the final method described
+
+
