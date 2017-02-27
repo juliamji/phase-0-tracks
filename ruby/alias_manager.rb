@@ -1,46 +1,59 @@
 #set up method for reordering the name
 #use first name and last name in order to reverse the order 
 #make new variable and concat the name in reverse order
+#now i want to iterate over the reversed name
+#use chars, map, and next 
+#i should have vowels and consonants also set up in array/hash
+#.downcase can be used to ensure the name is properly handled 
 
-#set up method for changing vowels & consonants
-	#set up my vowels in a string or array that i can look through? 
-	#map and .next 
+#notes: i've included a method that i tried to pseudocode out and an alternative algorithm because i'm a bit stuck 		
 	
-	
-	
-	#puts "the number of vowels in your name is: " full_name.count ("aeiou")
-	
+# def fake_name (first_name, last_name)
+# 	new_arr = []
+# 	reverse = "#{last_name}" + " " + "#{first_name}"
+# 	p reverse
+
+# 	#now i want to iterate over the reversed name
+
+# 	vowel= ["a", "e", "i", "o", "u"]
+# 	consonant = []
+
+# 	new_name = reverse.chars.map{ |vowel| vowel.next }
 
 	
-	#puts "the number of consonants in your name is: " full_name.count ("bcdfghjklmqprstvwxyz")
-		
+
+# 	p new_name
 	
-def fake_name (first_name, last_name)
-	new_arr = []
-	reverse = "last_name" + "first_name"
+# end 
 
-	vowel = ["a", "e", "i", "o", "u"]
-	new_vowels = "#{full_name}".split ("")
-	p new_vowels
+def fake_name(first_name, last_name)
+	name_arr = []
+	reversed_name = "#{last_name}" + " " + "#{first_name}"
+ 	# p reversed_name
 
-	p new_vowels.map! { |vowel| vowel.next }
+	new_name = reversed_name.reverse
+	# p new_name
 
-	name2 = new_vowels.join ("")
+	name_arr << new_name
 
-	p "your coded name is: #{name2}" 
-	
-end 
+	puts "your code name is: #{new_name}"
+
+	p name_arr
+
+end 	
+
+fake_name("felicia", "torres")
 
 #user interface
 
-loop do
-	puts "enter first name & hit enter. then enter last name & hit enter. to exit, type 'quit'"
-	first_name = gets.chomp
-	last_name = gets.chomp
+# loop do
+# 	puts "enter first name & hit enter. then enter last name & hit enter. to exit, type 'quit'"
+# 	first_name = gets.chomp
+# 	last_name = gets.chomp
 	
-	break if first_name == "quit" || last_name == "quit"
+# 	break if first_name == "quit" || last_name == "quit"
 
-	full_name = first_name.prepend ("#{last_name} ")
+# 	full_name = first_name.prepend ("#{last_name} ")
 
-	p full_name
-end	
+# 	p full_name
+# end	
