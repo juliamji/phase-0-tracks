@@ -14,4 +14,5 @@
 #Brave, intelligent, good for tracking
 
 #Husky
-#Brave, loves cold weather, tough
+#Free-spirt, loves cold weather, not a guard-dog
+
