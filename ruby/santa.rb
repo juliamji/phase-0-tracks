@@ -8,6 +8,9 @@ class Santa
 	end
 	
 	def eat_milk_and_cookies(cookie_type)
-		puts "That was a good #{cookie_type}!"
+		puts "That was a good #{cookie_type} cookie!"
 	end 		
 end 
+
+santa1 = Santa.new
+santa1.eat_milk_and_cookies("shortbread")
