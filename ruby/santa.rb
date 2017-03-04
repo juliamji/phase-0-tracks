@@ -13,15 +13,18 @@ class Santa
 	end 
 	
 	def age 
-		age = 0
+		@age = 0
 	end 	
 
 	def celebrate_birthday
-		age += 1
+		@age += 1
 	end	
 
-	def get_mad_at
-		@reindeer_ranking = reindeer_ranking
+	def get_mad_at(reindeer_name)
+		@reindeer_ranking.delete("#{reindeer_name}")
+		p reindeer_ranking
+		@reindeer_ranking.push("#{reindeer_name}")
+		p reindeer_ranking
 	end 	
 
 	def speak
@@ -34,15 +37,15 @@ class Santa
 end 
 
 #driver code
-santa = Santa.new ("agender", "Japanese")
-santa.speak
-santa.eat_milk_and_cookies("shortbread")
-santa.celebrate_birthday
-santa.get_mad_at
-santa.reindeer_ranking
-santa.gender = "male"
-santa.age
-santa.ethnicity
+# santa = Santa.new("agender", "Japanese")
+# santa.speak
+# santa.eat_milk_and_cookies("shortbread")
+# santa.celebrate_birthday
+# santa.get_mad_at
+# santa.reindeer_ranking
+# santa.gender = "male"
+# santa.age
+# santa.ethnicity
 
 santas = []
 genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
