@@ -1,7 +1,6 @@
 class TodoList
 	def initialize(item)
 		@list = item
-		
 	end 
 
 	def get_items
