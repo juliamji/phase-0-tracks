@@ -54,6 +54,8 @@ ages = [20, 35, 42, 56, 68, 71, 89, 94, 111, 128]
 	santas << santa
 end 
 
+p santas
+
 santas[3]
 santas[43]
 santas[32]
