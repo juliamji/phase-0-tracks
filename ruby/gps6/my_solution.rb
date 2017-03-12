@@ -56,11 +56,6 @@ class VirusPredictor
 
   end
 
-    STATE_DATA.each do |state, pop_data|
-    my_state = VirusPredictor.new(state, STATE_DATA[state][:population_density], STATE_DATA[state][:population])
-    my_state.virus_effects 
-   
-  end 
 
 end
 
