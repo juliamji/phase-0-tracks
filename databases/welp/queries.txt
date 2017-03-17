@@ -1,0 +1,6 @@
+2) sqlite> SELECT stars, comment, business_id, user_id FROM reviews INNER JOIN users on users.id = reviews.user_id INNER JOIN businesses on businesses.id = reviews.business_id;
+3|Average food|1|1
+5|Awesome food!|2|3
+4|Pretty good food|2|2
+
+3)
