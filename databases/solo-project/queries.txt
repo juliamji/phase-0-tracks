@@ -1,0 +1,24 @@
+1. 
+sqlite> SELECT * FROM businesses
+   ...> ;
+1|Toilets-R-Us|2
+2|Super Duper Engineering|1
+3|Advancing LGBT Entrepreneurs|5
+sqlite> SELECT * FROM members
+   ...> ;
+1|Frenchie French|Office|
+2|Oz Man|Office|
+3|Stefan de Queen|Nomadic
+
+2. 
+sqlite> SELECT * FROM members WHERE membership_type="Office";
+1|Frenchie French|Office|
+2|Oz Man|Office|
+
+3. 
+SELECT * FROM  members, businesses WHERE members.business_id = businesses.id;
+Note: this should work but it doesn't return anything but I can't seem to find my error 
+
+5. 
+sqlite> DELETE FROM members
+   ...> WHERE member_name="Oz Man";
