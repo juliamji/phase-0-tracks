@@ -22,3 +22,15 @@ Note: this should work but it doesn't return anything but I can't seem to find m
 5. 
 sqlite> DELETE FROM members
    ...> WHERE member_name="Oz Man";
+
+Joins 
+Inner, full, left, and right joins 
+
+SELECT members.member_name, businesses.business_name FROM members INNER JOIN businesses ON members.business_id = businesses.id;
+
+SELECT members.member_name, businesses.business_name FROM members FULL JOIN businesses ON members.business_id = businesses.id;
+
+SELECT members.member_name, businesses.business_name FROM members LEFT JOIN businesses ON members.business_id = businesses.id;
+
+SELECT members.member_name, businesses.business_name FROM members RIGHT JOIN businesses ON members.business_id = businesses.id;
+
