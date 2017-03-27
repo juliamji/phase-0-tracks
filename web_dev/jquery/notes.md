@@ -14,4 +14,9 @@
   });
 
 +Loading jquery in html
-	-<script src="jquery.min.js"></script>  
+	- <script src="jquery.min.js"></script>  
+	- <script src="application.js"></script>
++Finding elements by id/class
+	-$("p");
+	-$("#container");
+	-$(".articles");
