@@ -23,6 +23,15 @@ get '/:person_1/loves/:person_2' do
   "#{params[:person_1]} loves #{params[:person_2]}"
 end
 
+get '/contact' do
+  "Address: 633 Folsom St Fl 6. San Francisco, CA 94107"
+end  
+
+get 'great_job/:stu_name' do
+  stu_name = params[:stu_name]
+  "great job #{stu_name}!"
+end 
+
 # write a GET route that retrieves
 # all student data
 get '/students' do
